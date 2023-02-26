@@ -1,0 +1,187 @@
+#root {
+    background-color: #0f172a !important;
+    font-family: IBM Plex Sans, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.editornav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 3px 5px;
+}
+
+#dragMe:hover {
+    cursor: col-resize;
+}
+
+.css-1dimb5e-singleValue {
+    color: white !important;
+}
+
+.resizer {
+    background-color: #4b5563;
+    cursor: ew-resize;
+    height: 100%;
+    width: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 0.3s ease-in;
+
+    margin-left: -1px !important;
+
+}
+
+.resizer:hover {
+    background-color: rgb(37 99 235);
+}
+
+.resizer:active {
+    background-color: rgb(37 99 235);
+}
+
+.container__left {
+    /* Initially, the left takes width */
+    width: 68%;
+    min-width: 45%;
+    /* Misc */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+
+    animation: move-in-steps 2s steps(4, start) infinite;
+}
+
+
+
+* {
+    -webkit-user-drag: none;
+}
+
+.code-editor textarea {
+    height: 8em;
+    max-height: 12em;
+    min-height: 4em;
+
+}
+
+#react-select-3-input,
+#react-select-5-input {
+    color: white !important;
+}
+
+.container__right {
+    /* Take the remaining width */
+    flex: 1;
+    min-width: 20%;
+    margin-left: 0px !important;
+
+    /* Misc */
+    animation: move-in-steps 2s steps(4, start) infinite;
+
+
+}
+
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    /* background-color: rgb(15 23 42); */
+
+}
+
+
+.listItem:hover {
+    background: #e2e8f0;
+    cursor: pointer;
+}
+
+.github-corner svg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    mix-blend-mode: darken;
+    color: #ffffff;
+    fill: #000000;
+}
+
+.github-corner:hover .octo-arm {
+    animation: octocat-wave .56s;
+}
+
+@keyframes octocat-wave {
+
+    0%,
+    100% {
+        transform: rotate(0);
+    }
+
+    20%,
+    60% {
+        transform: rotate(-20deg);
+
+    }
+
+    40%,
+    80% {
+        transform: rotate(10deg);
+    }
+}
+
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+
+::-webkit-scrollbar-track {
+
+    background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #94a3b8;
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #475569;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: #475569;
+    border-radius: 10px;
+}
+
+.css-qc6sy-singleValue {
+    color: white !important;
+}
+
+
+/*  border  hover:text-blue-700 focus:z-10 focus:ring-gray-500   hover:bg-gray-700  */
+.dropdownInner>div {
+    border-radius: 0.5rem;
+    border: 1px solid;
+    border-color: rgb(75 85 99);
+
+    background-color: rgb(31 41 55);
+    height: fit-content;
+    color: white !important;
+}
+
+.dropdownInner>div:hover {
+    border-color: rgb(55 65 81);
+    background-color: rgb(55 65 81);
+    color: white;
+}
+
+.editorlayout>div {
+    /* -webkit-transition: width .09s linear .001s, height .09s linear .001s; */
+    /* user-select: none; */
+}

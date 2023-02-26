@@ -1,0 +1,62 @@
+.home {
+    background-image: url('header.png');
+    background-size: 100vw 95vh;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+
+}
+
+.herobanner {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    flex-direction: column;
+}
+
+
+
+.bannerdisplay {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.bannerdisplay img {
+    max-width: 40vw;
+}
+
+.bannerdisplay .description {
+    max-width: 40vw;
+}
+
+.cardhome {
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2) !important;
+}
+
+.editor1display {
+    padding: 100px 0;
+    width: 100vw;
+    background-color: #f1f4f8 !important;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.editor2display {
+    padding: 100px 0;
+    width: 100vw;
+    background-color: #f1f4f8 !important;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+footer {
+    width: 100vw;
+}
