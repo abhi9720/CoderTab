@@ -71,6 +71,7 @@ function App() {
         try {
           if (!isValidQueryPath(data, query)) {
             console.log("invalid json")
+            // eslint-disable-next-line
             throw "Invalid Json Query";
           }
           const result = jsonpath.query(data, query);
@@ -83,6 +84,7 @@ function App() {
         }
         catch (err) {
           setError(true)
+          // eslint-disable-next-line
           setSyntaxError(new String(err))
         }
       }
@@ -315,8 +317,9 @@ function App() {
 
           {error ? (
             <div className="DisplayActionmsg">
-              <h2>Errors:</h2>
 
+              <h2 className="text-red-400 font-bold py-2 px-5">Error</h2>
+              <hr />
               <pre>
                 {syntaxError}
               </pre>
