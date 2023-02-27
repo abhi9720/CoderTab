@@ -22,6 +22,7 @@
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif !important;
+
 }
 
 .screenshot {
@@ -32,7 +33,7 @@
     height: fit-content;
     padding: 8px;
     border-radius: 8px;
-    background-color: white;
+    background-color: #fafbfc;
     box-shadow: rgb(0 0 0 / 30%) 0 0 12px;
 }
 
@@ -56,7 +57,7 @@
 .editor1display {
     padding: 100px 0;
     width: 100vw;
-    background-color: #fff;
+    background-color: #fafbfc;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -66,7 +67,7 @@
 .editor2display {
     padding: 100px 0;
     width: 100vw;
-    background-color: #fff;
+    background-color: #fafbfc;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -100,6 +101,7 @@
     }
 
 }
+
 
 
 footer {

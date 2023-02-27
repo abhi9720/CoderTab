@@ -14,6 +14,7 @@
     "i": "^0.3.7",
     "js-yaml": "^4.1.0",
     "jsonlint-mod": "^1.7.6",
+    "jsonpath": "^1.1.1",
     "monaco-json": "^3.9.0",
     "monaco-themes": "^0.4.3",
     "npm": "^9.5.1",

@@ -1,35 +1,39 @@
 .App {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     height: 100vh;
     width: 100vw;
+    overflow-x: hidden;
+
+}
+
+.jsonqueryinput {
+    width: 43vw !important;
 }
 
 .filedrop {
     width: 200px;
     height: 40px;
-    border: 1px solid blue;
     border: 20px;
-    background-color: rebeccapurple;
 }
 
 
 .Actionbtn {
-    border-top: 1px solid white;
     margin-top: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 20px;
-    padding: 0 20px;
     width: 200px;
     height: 100%;
+
+
 }
 
 .pannelWrapper {
-    height: calc(100vh - 7vh);
+    height: calc(100vh - 11.299999vh);
     width: 100vw;
     display: flex;
     background-color: #14b8a6;
@@ -104,29 +108,23 @@ svg {
     font-family: monospace;
 }
 
-
-.editor {
-    counter-reset: line;
-    border: 1px solid #ced4da;
+.DisplayActionmsg {
+    background-color: black;
+    color: #14b8a6;
+    height: 100%;
+    box-sizing: border-box;
+    font-size: 18px;
 }
 
-.editor #codeArea {
-    outline: none;
-    padding-left: 60px !important;
+.DisplayActionmsg pre {
+    box-sizing: border-box;
+    height: 100%;
+    max-width: 100%;
+    overflow-y: scroll;
+    padding: 10px;
+
 }
 
-.editor pre {
-    padding-left: 60px !important;
-}
-
-.editor .editorLineNumber {
-    position: absolute;
-    left: 0px;
-    color: #cccccc;
-    text-align: right;
-    width: 40px;
-    font-weight: 100;
-}
 
 .sc-bcXHqe svg {
     display: none;
