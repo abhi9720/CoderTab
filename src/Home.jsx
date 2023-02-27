@@ -12,11 +12,12 @@ function Home() {
             className="home min-h-screen flex flex-col justify-center items-center">
 
             <div className="herobanner">
-                <h1 className="font-extrabold text-transparent text-8xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">CoderTab</h1>
+                {/* text-transparent text-8xl bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600 */}
+                <h1 className="font-extrabold  text-white text-7xl bg-slate-100 p-2 px-5 rounded-xl bg-opacity-10">CoderTab</h1>
                 <div className="flex flex-wrap justify-center gap-8 ">
-                    <Card title="Code Editor" description="Code Editor: write/run code in multiple languages with custom input, themes, shortcuts, and internet status indicator for programmers." image="https://user-images.githubusercontent.com/68281476/221411823-1e5222a1-dc0b-4f14-af09-eebb20c531c9.png" link="./codeeditor" />
+                    <Card title="Code Editor" description="Write/run code in multiple languages with custom input, themes, shortcuts, and internet status indicator for programmers." image="https://user-images.githubusercontent.com/68281476/221411823-1e5222a1-dc0b-4f14-af09-eebb20c531c9.png" link="./codeeditor" />
 
-                    <Card title="Json Editor" description="JsonEditor: upload JSON, convert to CSV/XML/YAML, Beautify JSON, validate syntax. Essential tool for working with JSON data." image="https://user-images.githubusercontent.com/68281476/221411720-2b5bb125-e066-4cd9-9655-98d7a813f965.jpeg" link="./jsoneditor" />
+                    <Card title="Json Editor" description="Upload JSON, convert to CSV/XML/YAML, Beautify JSON, validate syntax. Essential tool for working with JSON data." image="https://user-images.githubusercontent.com/68281476/221411720-2b5bb125-e066-4cd9-9655-98d7a813f965.jpeg" link="./jsoneditor" />
 
                 </div>
 

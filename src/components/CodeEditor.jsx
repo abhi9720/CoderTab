@@ -549,7 +549,7 @@ const CodeEditor = () => {
                     <div className="h-1 w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 transition duration-200">
                     </div>
 
-                    <div className="flex flex-row border-2 border-t-0 border-gray-600 gap-4" >
+                    <div className="headercodeeditor flex flex-row border-2 border-t-0 border-gray-600 gap-4" >
                         <Link to="/" className='mt-1 ml-2'>
                             <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center mr-5">
                                 <FaHome fontSize={18} color="black" />
@@ -656,7 +656,7 @@ const CodeEditor = () => {
 
             < div className="editorlayout flex flex-row  space-x-4 items-start border-2 border-t-0 border-b-0 border-gray-600"
                 style={{
-                    height: fullScreen ? "99vh" : `calc(100vh - 6.4vh )`,
+                    height: fullScreen ? "99vh" : `calc(100vh - 9vh )`,
                 }}>
                 <div className="flex flex-col h-full justify-start items-end container__left">
                     <CodeEditorWindow

@@ -1,5 +1,6 @@
 .home {
-    background-image: url('header.png');
+    /* background-image: url('header.png'); */
+    background: linear-gradient(-40deg, #9a326b 0, #42668a 100%);
     background-size: 100vw 95vh;
     background-repeat: no-repeat;
     overflow-x: hidden;
