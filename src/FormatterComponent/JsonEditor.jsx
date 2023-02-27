@@ -25,7 +25,7 @@ const fileTypes = ["json"];
 function App() {
   const [inputJsonData, setInputJsonData] = useState("");
   const [outputJsonData, setOutputJsonData] = useState("");
-  const [processing, setProcessing] = useState(false);
+  // const [processing, setProcessing] = useState(false);
   const [syntaxError, setSyntaxError] = useState(null);
   const [error, setError] = useState(false)
   const [lang, setLang] = useState('json')
@@ -145,7 +145,7 @@ function App() {
 
       <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-3">
         <div class="flex items-center flex-shrink-0 text-white mr-6">
-          <Link to="/">
+          <Link to="/" className="redirecthome">
             <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center mr-5">
               <FaHome fontSize={18} color="black" />
             </button>
@@ -163,9 +163,9 @@ function App() {
         </div>
 
 
-        <button onClick={copyToClipboard} type="button" id="copytxt" className="format-button iconbtn">
+        <button onClick={copyToClipboard} type="button" className="text-black bg-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
           <div>
-            <FaRegCopy fontSize={18} color="white" /> Copy Output
+            <FaRegCopy fontSize={18} color="black" /> Copy Output
           </div>
         </button>
 
@@ -188,23 +188,29 @@ function App() {
         </div>
 
         <div className="Actionbtn">
-          <button className="format-button" onClick={handleFormatClick}>
+
+          {
+            outputJsonData &&
+            <div class="bg-blue-100 text-blue-800  font-bold text-lg mr-2 px-2.5 py-0.5 rounded dark:bg-blue-900 dark:text-blue-300 flex justify-center items-center gap-2">
+              <span>Json</span>  <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>  <span className="capitalize">{lang}</span>
+            </div>
+
+
+          }
+
+          <button className="text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 mr-2 mb-2" onClick={handleFormatClick}>
             Format / Json
           </button>
 
 
           {
             lang === "json" &&
-            <button disabled={error} className="format-button" onClick={handleValidate}>Validate Json</button>
+            <button disabled={error} className="text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 mr-2 mb-2" onClick={handleValidate}>Validate Json</button>
           }
-          <button disabled={error} className="format-button" onClick={convertToCSV}>Convert to CSV</button>
+          <button disabled={error} className="text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 mr-2 mb-2" onClick={convertToCSV}>Convert to CSV</button>
 
-          <button disabled={error} className="format-button" onClick={handleConvertToYaml}>Convert to YAML</button>
-          <button disabled={error} className="format-button" onClick={handleConvertToXml}>{`Convert \n to XML`}</button>
-
-          <h4> {processing ? "processing " : "not processing"} </h4>
-
-
+          <button disabled={error} className="text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 mr-2 mb-2" onClick={handleConvertToYaml}>Convert to YAML</button>
+          <button disabled={error} className="text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 mr-2 mb-2" onClick={handleConvertToXml}>{`Convert \n to XML`}</button>
 
         </div>
 

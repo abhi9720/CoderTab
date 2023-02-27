@@ -87,13 +87,6 @@
 
 }
 
-body {
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-weight: 300;
-    font-size: 14px;
-    /* background-color: rgb(15 23 42); */
-
-}
 
 
 .listItem:hover {

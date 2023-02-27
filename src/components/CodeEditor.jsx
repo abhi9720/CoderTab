@@ -5,7 +5,7 @@ import { languageOptions } from "../constants/languageOptions";
 import { snippet } from "../constants/snippet";
 import { classnames } from "../utils/general";
 import './codeEditor.css'
-import { FaExpand, FaCompress, FaRegCopy } from 'react-icons/fa';
+import { FaExpand, FaCompress, FaRegCopy, FaHome } from 'react-icons/fa';
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { defineTheme } from "../lib/defineTheme"
@@ -18,6 +18,7 @@ import useKeyPress from '../hooks/useKeyPress';
 import DateDiff from 'date-diff';
 import copy from 'copy-to-clipboard';
 import StopWatch from './StopWatch';
+import { Link } from 'react-router-dom';
 
 
 
@@ -388,6 +389,7 @@ const CodeEditor = () => {
     }, [key_fullScreen]);
 
 
+    // const url = window.location.pathname.split('/').pop();
 
 
     useEffect(() => {
@@ -547,7 +549,13 @@ const CodeEditor = () => {
                     <div className="h-1 w-full bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 transition duration-200">
                     </div>
 
-                    <div className="flex flex-row border-2 border-t-0 border-gray-600" >
+                    <div className="flex flex-row border-2 border-t-0 border-gray-600 gap-4" >
+                        <Link to="/" className='mt-1 ml-2'>
+                            <button className="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center mr-5">
+                                <FaHome fontSize={18} color="black" />
+                            </button>
+                        </Link>
+
                         <div className="dropdownInner">
                             <LanguagesDropdown onSelectChange={onSelectChange} Userlanguage={language} />
                         </div>
@@ -555,7 +563,7 @@ const CodeEditor = () => {
                             <ThemeDropdown handleThemeChange={handleThemeChange} theme={theme} />
                         </div>
                         {/* <span>fontsize :  {font_size}</span> */}
-                        <div className="px-4 mt-1 justify-end">
+                        <div className="px-4 justify-end">
                             <div className="d-flex px-2 py-1 rounded-lg border focus:outline-none hover:bg-gray-700 hover:text-blue-700 focus:z-10  focus:ring-gray-500 bg-gray-800 border-gray-600 hover:text-white hover:bg-gray-700">
                                 <label htmlFor="fontsize_lable" className="form-label mr-2 text-gray-100">Font Size</label>
                                 <input
@@ -580,6 +588,8 @@ const CodeEditor = () => {
                         <div className="px-4  mx-auto justify-end flex items-center" style={{
                             flex: 1
                         }} >
+
+
                             <button onClick={copyToClipboard} type="button" id="copytxt" className="flex items-center py-2 px-4 mr-3  text-xs font-medium  rounded-lg border focus:outline-none hover:bg-gray-700 hover:text-blue-700 focus:z-10  focus:ring-gray-500 bg-gray-800 border-gray-600 hover:text-white hover:bg-gray-700">
                                 <FaRegCopy fontSize={18} color="white" />
                             </button>
@@ -646,7 +656,7 @@ const CodeEditor = () => {
 
             < div className="editorlayout flex flex-row  space-x-4 items-start border-2 border-t-0 border-b-0 border-gray-600"
                 style={{
-                    height: fullScreen ? "99vh" : `calc(100vh - 56px )`,
+                    height: fullScreen ? "99vh" : `calc(100vh - 6.4vh )`,
                 }}>
                 <div className="flex flex-col h-full justify-start items-end container__left">
                     <CodeEditorWindow

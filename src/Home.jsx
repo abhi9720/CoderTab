@@ -1,8 +1,10 @@
 import React from "react";
 import "tailwindcss/tailwind.css";
 import './Home.css'
-
+import codeditorimg from './codeeditor.jpeg'
+import jsonditorimg from './jsoneditor.jpeg'
 import Card from "./Card";
+import { FaGithub, FaInstagram, FaLinkedinIn, FaTwitter } from "react-icons/fa";
 
 function Home() {
     return (
@@ -27,37 +29,31 @@ function Home() {
 
                 <div className="editor1display">
                     <article className="description">
-                        <h1 className="text-4xl font-bold mb-8">Garlic bread with cheese: What the science tells us</h1>
-                        <p>
-                            For years parents have espoused the health benefits of eating garlic bread with cheese to their
-                            children, with the food earning such an iconic status in our culture that kids will often dress
-                            up as warm, cheesy loaf for Halloween.
-                        </p>
-                        <p>
-                            But a recent study shows that the celebrated appetizer may be linked to a series of rabies cases
-                            springing up around the country.
+                        <h1 className="text-4xl font-bold mb-8">Code Editor: The Ultimate Web App for Efficient Programming</h1>
+                        <p className="font-normal text-gray-700 dark:text-gray-400 text-lg">
+                            <strong>Code Editor</strong> is a web app that allows users to write and run code in multiple programming languages with custom input. With its user-friendly interface, <strong> multiple themes, and font sizes </strong>, along with convenient shortcuts for code execution, Code Editor is a valuable tool for programmers of all levels. The app also includes an <strong> internet status</strong> indicator to ensure users are always connected.
                         </p>
 
+
                     </article>
-                    <img src={"https://www.remoteinterview.io/assets/img/codepad.jpg"} alt="CodePad 1" className="w-1/2 mb-4" />
+                    <div className="screenshot">
+                        <img src={codeditorimg} alt="CodePad 1" className="w-1/2 mb-4" />
+                    </div>
 
                 </div>
 
                 <div className="editor2display">
                     <article className="description">
-                        <h1 className="text-4xl font-bold mb-8">Garlic bread with cheese: What the science tells us</h1>
-                        <p>
-                            For years parents have espoused the health benefits of eating garlic bread with cheese to their
-                            children, with the food earning such an iconic status in our culture that kids will often dress
-                            up as warm, cheesy loaf for Halloween.
-                        </p>
-                        <p>
-                            But a recent study shows that the celebrated appetizer may be linked to a series of rabies cases
-                            springing up around the country.
+                        <h1 className="text-4xl font-bold mb-8">JsonEditor: A Versatile Tool for Converting, and Validating JSON Data</h1>
+                        <p className="text-lg font-normal text-gray-700 dark:text-gray-400">
+                            <strong>JsonEditor </strong>  is a powerful web application that can read JSON code from <strong>uploaded files </strong> and convert it into <strong> CSV, XML, and YAML formats.</strong> The app also includes a feature to easily <strong>Beautify JSON code </strong> and validate its syntax. With its diverse range of functions, JsonEditor is an essential tool for working with JSON data.
                         </p>
 
+
                     </article>
-                    <img src={"https://www.remoteinterview.io/assets/img/codepad.jpg"} alt="CodePad 1" className="w-1/2 mb-4" />
+                    <div className="screenshot">
+                        <img src={jsonditorimg} alt="CodePad 1" className="w-1/2 mb-4" />
+                    </div>
 
                 </div>
 
@@ -77,73 +73,51 @@ function Home() {
                                 Follow us on social media
                             </h5>
                             <div className="mt-6">
-                                <button
-                                    className="bg-white text-gray-900 active:bg-gray-100 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                                <a
+                                    href="https://github.com/abhi9720"
+                                    className="text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-800 dark:bg-white dark:border-gray-700 dark:text-gray-900 dark:hover:bg-gray-200 mr-2 mb-2"
                                     type="button"
                                     style={{ transition: 'all .15s ease' }}
                                 >
-                                    <i className="fab fa-twitter"></i> Twitter
-                                </button>
-                                <button
-                                    className="bg-white text-gray-900 active:bg-gray-100 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                                    <FaGithub className="mr-1" /> Twitter
+                                </a>
+
+
+                                <a
+                                    href="https://twitter.com/ishutiw85007243?t=ZvpoW3_PhYVNQ60pO7pKUA&s=08"
+                                    className="text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-800 dark:bg-white dark:border-gray-700 dark:text-gray-900 dark:hover:bg-gray-200 mr-2 mb-2"
                                     type="button"
                                     style={{ transition: 'all .15s ease' }}
                                 >
-                                    <i className="fab fa-facebook"></i> Facebook
-                                </button>
-                                <button
-                                    className="bg-white text-gray-900 active:bg-gray-100 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                                    <FaTwitter className="mr-1" /> Twitter
+                                </a>
+                                <a
+                                    href="https://instagram.com/ishutiwari75"
+                                    className="text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-800 dark:bg-white dark:border-gray-700 dark:text-gray-900 dark:hover:bg-gray-200 mr-2 mb-2"
                                     type="button"
                                     style={{ transition: 'all .15s ease' }}
                                 >
-                                    <i className="fab fa-linkedin"></i> LinkedIn
-                                </button>
+                                    <FaInstagram className="mr-1" />   Instagram
+                                </a>
+                                <a
+                                    href="https://linkedin.com/in/abhi9720"
+                                    className="text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-800 dark:bg-white dark:border-gray-700 dark:text-gray-900 dark:hover:bg-gray-200 mr-2 mb-2"
+                                    type="button"
+                                    style={{ transition: 'all .15s ease' }}
+                                >
+                                    <FaLinkedinIn className="mr-1" /> LinkedIn
+                                </a>
                             </div>
                         </div>
                     </div>
                     <hr className="my-6 border-gray-700" />
                     <div className="flex flex-wrap items-center md:justify-between justify-center">
-                        <div className="w-full md:w-4/12 px-4">
+                        <div className="w-full  px-4">
                             <div className="text-sm text-white font-semibold py-1">
-                                © {new Date().getFullYear()} Your Company
+                                © {new Date().getFullYear()} CoderTab
                             </div>
                         </div>
-                        <div className="w-full md:w-8/12 px-4">
-                            <ul className="flex flex-wrap list-none md:justify-end justify-center">
-                                <li>
-                                    <a
-                                        href="#"
-                                        className="text-white hover:text-gray-400 text-sm font-semibold block py-1 px-3"
-                                    >
-                                        Your Company
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="#"
-                                        className="text-white hover:text-gray-400 text-sm font-semibold block py-1 px-3"
-                                    >
-                                        About Us
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="#"
-                                        className="text-white hover:text-gray-400 text-sm font-semibold block py-1 px-3"
-                                    >
-                                        Blog
-                                    </a>
-                                </li>
-                                <li>
-                                    <a
-                                        href="#"
-                                        className="text-white hover:text-gray-400 text-sm font-semibold block py-1 px-3"
-                                    >
-                                        MIT License
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+
                     </div>
                 </div>
             </footer>

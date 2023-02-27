@@ -12,3 +12,11 @@
   margin: 0;
   padding: 0;
 }
+
+.redirecthome button {
+  background-color: white !important;
+}
+
+.redirecthome button:hover {
+  background-color: cornsilk;
+}

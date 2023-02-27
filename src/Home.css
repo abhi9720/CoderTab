@@ -22,10 +22,25 @@
     flex-direction: column;
 }
 
+.screenshot {
+    border: 1px solid #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 40vw;
+    height: fit-content;
+    padding: 8px;
+    border-radius: 8px;
+    background-color: white;
+    box-shadow: rgb(0 0 0 / 30%) 0 0 12px;
+}
 
 .bannerdisplay img {
-    max-width: 40vw;
+    width: 100%;
+    margin: 0;
 }
+
+
 
 .bannerdisplay .description {
     max-width: 40vw;
@@ -39,7 +54,7 @@
 .editor1display {
     padding: 100px 0;
     width: 100vw;
-    background-color: #f1f4f8 !important;
+    background-color: #fff;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -49,8 +64,7 @@
 .editor2display {
     padding: 100px 0;
     width: 100vw;
-    background-color: #f1f4f8 !important;
-
+    background-color: #fff;
     display: flex;
     justify-content: space-around;
     align-items: center;
