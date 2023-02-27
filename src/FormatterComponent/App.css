@@ -1,0 +1,147 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    width: 100vw;
+}
+
+.filedrop {
+    width: 200px;
+    height: 40px;
+    border: 1px solid blue;
+    border: 20px;
+    background-color: rebeccapurple;
+}
+
+
+.Actionbtn {
+    border-top: 1px solid white;
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+    width: 200px;
+    height: 100%;
+}
+
+.pannelWrapper {
+    height: calc(100vh - 7vh);
+    width: 100vw;
+    display: flex;
+    background-color: #14b8a6;
+}
+
+.inputpanel {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.outputpanel {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+
+
+.inputbox {
+    padding: 10px;
+    font-size: 16px;
+    line-height: 1.4;
+    border-radius: 5px;
+    overflow-y: scroll;
+    flex: 1;
+}
+
+.outputbox {
+    padding: 10px;
+    font-size: 16px;
+    line-height: 1.4;
+    border: 1px solid green;
+    border-radius: 5px;
+    flex: 1;
+    overflow-y: scroll;
+    font-size: 16px;
+}
+
+
+.format-button {
+
+    padding: 8px 5px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid white;
+    border-radius: 5px;
+
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 135px;
+    transition: all 500ms;
+}
+
+svg {
+    display: inline !important;
+}
+
+.iconbtn:hover {
+    background-color: turquoise !important;
+}
+
+.format-button:hover {
+    background-color: white;
+    color: #222;
+}
+
+.output {
+    font-family: monospace;
+}
+
+
+.editor {
+    counter-reset: line;
+    border: 1px solid #ced4da;
+}
+
+.editor #codeArea {
+    outline: none;
+    padding-left: 60px !important;
+}
+
+.editor pre {
+    padding-left: 60px !important;
+}
+
+.editor .editorLineNumber {
+    position: absolute;
+    left: 0px;
+    color: #cccccc;
+    text-align: right;
+    width: 40px;
+    font-weight: 100;
+}
+
+.sc-bcXHqe svg {
+    display: none;
+}
+
+.fileuploader {
+    background-color: white;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.sc-bcXHqe {
+    background-color: white;
+}
+
+.sc-bcXHqe span {
+    font-weight: 600 !important;
+}

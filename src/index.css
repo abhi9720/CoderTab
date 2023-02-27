@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif !important;
+}
+
+.redirecthome button {
+  background-color: white !important;
+}
+
+.redirecthome button:hover {
+  background-color: cornsilk;
+}
