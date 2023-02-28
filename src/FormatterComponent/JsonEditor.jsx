@@ -223,7 +223,7 @@ function App() {
               <FaHome fontSize={18} color="black" />
             </button>
           </Link>
-          <img src="https://user-images.githubusercontent.com/68281476/221413170-43e808c4-48a4-457f-b61d-0b0dcd434ced.png" className="h-6 mr-3 sm:h-9" alt="Flowbite Logo" />
+          <img src="https://user-images.githubusercontent.com/68281476/221413170-43e808c4-48a4-457f-b61d-0b0dcd434ced.png" className="h-6 mr-3 sm:h-9" alt="jsonlogo Logo" />
 
 
           <span className="font-semibold text-xl tracking-tight">JSON Validator
