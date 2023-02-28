@@ -1,24 +1,24 @@
 .home {
-    /* background-image: url('header.png'); */
-    background: linear-gradient(-40deg, #9a326b 0, #42668a 100%);
-    background-size: 100vw 95vh;
-    background-repeat: no-repeat;
     overflow-x: hidden;
 
 }
 
+
+
 .herobanner {
-    min-height: 90vh;
+    padding-top: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 100px;
     flex-direction: column;
+    margin-bottom: 100px;
+
 }
 
 
 
 .bannerdisplay {
+
     display: flex;
     flex-direction: column;
     font-family: 'Roboto', sans-serif !important;
@@ -26,20 +26,22 @@
 }
 
 .screenshot {
-    border: 1px solid #e5e7eb;
+
     display: flex;
     justify-content: center;
     align-items: center;
     height: fit-content;
     padding: 8px;
     border-radius: 8px;
-    background-color: #fafbfc;
+    background-color: rgba(226, 232, 240, 0.3);
     box-shadow: rgb(0 0 0 / 30%) 0 0 12px;
+    object-fit: cover;
 }
 
 .bannerdisplay img {
     width: 100%;
     margin: 0;
+    object-fit: cover;
 }
 
 
@@ -51,13 +53,13 @@
 
 .cardhome {
     border-radius: 20px;
-    box-shadow: 0 5px 10px rgba(154, 160, 185, .05), 0 15px 40px rgba(166, 173, 201, .2) !important;
+    box-shadow: (15, 23, 42, .1);
 }
 
 .editor1display {
     padding: 100px 0;
     width: 100vw;
-    background-color: #fafbfc;
+    background-color: #f6f8fa;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -67,10 +69,11 @@
 .editor2display {
     padding: 100px 0;
     width: 100vw;
-    background-color: #fafbfc;
+    background-color: #f6f8fa;
     display: flex;
     justify-content: space-around;
     align-items: center;
+
 }
 
 @media(max-width:1100px) {

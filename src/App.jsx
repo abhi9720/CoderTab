@@ -4,6 +4,7 @@ import JsonEditor from './FormatterComponent/JsonEditor.jsx';
 import { ToastContainer } from "react-toastify";
 import Home from './Home.jsx';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Page404 from './Page404.jsx';
 const App = () => {
   return (
     <>
@@ -26,6 +27,8 @@ const App = () => {
           <Route exact path="/" element={<Home />} />
           <Route exact path="/codeeditor" element={<CodeEditor />} />
           <Route exact path="/jsoneditor" element={<JsonEditor />} />
+          <Route exact path="*" element={<Page404 />} />
+
         </Routes>
       </Router>
 

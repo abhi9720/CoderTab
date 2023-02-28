@@ -165,17 +165,8 @@ function App() {
   };
 
   function parseCSV(data) {
-    // const results = [];
-    // const headers = Object.keys(data);
-    // console.log(headers)
-    // results.push(headers.join(','));
-    // const values = headers.map((header) => {
-    //   return data[header];
-    // });
 
     setLang("csv");
-    // results.push(values.join(','));
-    // return results.join('\n');
     const rows = [];
     let parseddata = JSON.parse(data)
     console.log(typeof parseddata)
@@ -258,7 +249,7 @@ function App() {
         <form onSubmit={handleKeyDown}>
           <label for="search" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
           <div class="relative">
-            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none font-bold">
+            <div class="absolute inset-y-0 left-0 flex items-center px-2 pointer-events-none font-bold bg-teal-400">
               <FaDollarSign></FaDollarSign>.
             </div>
             <input autoComplete="off" value={query} onChange={(e) => setQuery(e.target.value)} type="search" id="search" class="block p-4 pl-10 text-sm text-gray-900 border border-teal-300 rounded-lg bg-teal-50 focus:ring-teal-500 focus:border-teal-500 dark:bg-teal-700 dark:border-teal-600 dark:placeholder-teal-400 dark:text-white dark:focus:ring-teal-500 dark:focus:border-teal-500 focus:outline-none docus jsonqueryinput" placeholder="Json Query Path" required />
@@ -317,7 +308,6 @@ function App() {
 
           {error ? (
             <div className="DisplayActionmsg">
-
               <h2 className="text-red-400 font-bold py-2 px-5">Error</h2>
               <hr />
               <pre>
